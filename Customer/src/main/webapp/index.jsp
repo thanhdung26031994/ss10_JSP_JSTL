@@ -12,9 +12,9 @@
 </head>
 <body>
 <h1>Danh sách khách hàng</h1>
-<form action="/customer" method="get">
-    <input type="submit" id="submit" value="Danh Sách">
-</form>
+<%--<form action="/customer" method="get">--%>
+<%--    <input type="submit" id="submit" value="Danh Sách">--%>
+<%--</form>--%>
 
 <table class="table table-striped table-hover">
     <thead>
@@ -26,7 +26,7 @@
     </tr>
     </thead>
 
-    <c:forEach items="${list}" var="c" varStatus="loop">
+    <c:forEach items="${list}" var="c">
         <tbody>
         <tr>
             <td>${c.getName()}</td>
